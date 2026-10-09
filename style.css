@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter/Inter-VariableFont_opsz,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    background-color: #f8fbfd;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("images/sydney-overview.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    max-width: 800px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    color: #216b8a;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 25px auto;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d7e3e8;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #216b8a;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#form-message {
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dceff7;
+}
+
+footer {
+    background-color: #216b8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
